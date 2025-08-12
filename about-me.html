@@ -1,50 +1,118 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Abouut me - Thanuja</title>
+        <title>About Me - Thanuja Mattam</title>
+        <style>
+            #mainheader{
+                text-align: center;
+                background-color: beige;
+                color: darkred;
+                padding: 10px;
+            }
+            #liststyle{
+                padding: 2px;
+            }
+            #subheader{
+                background-color: beige;
+                color: darkred;
+                padding: 5px;
+            }
+            #tablestyle{
+                border-radius: 10px;
+                background-color: rgb(222, 246, 222);
+                text-align: center;
+                padding: 2px;
+            }
+            #tablehead{
+                color: darkgreen;
+                padding: 2px;
+            }
+            #main-footer{
+                text-align: center;
+                font-size: 18px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Thanuja Mattam</h1>
-
-        <p>“I started in a support role at TCS, but outside work I rekindled my love for coding. I learned full stack dev and built
-multiple projects, while refreshing DSA. I’m now ready to move into a full-time development role where I can use my
-coding strengths and grow.”</p>
-
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Drawing</li>
-            <li>Teaching Kids</li>
-        </ul>
-
-        <h2>My GitHub</h2>
-        <a href="https://github.com/ThanujaMattam" target="_blank">Visit my GitHub</a>
-        <br><br>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Confidence (1-5)</th>
-                </tr>
-            <tbody>
-                <tr>
-                    <td>OBIEE</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Power BI</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
-            </thead>
-        </table>
-    </body>
+        <header  id="mainheader">
+            <h1>Thanuja Mattam</h1>
+            <small>OBIEE Developer & Full Stack Learner</small>
+        </header>
+        <p>As an OBIEE Developer in TCS, I developed OBIEE RPDs, Reports and Dashboards and with interest I have rekindled my coding skills. I am now learning Full-Stack to take up a Full Stack Dev role.</p>
+        <br>
+        <section>
+            <article>
+                <a href="C:\Users\Hemanth\Desktop\fullstack-journey\Images\Painting.jpeg"><img src="C:\Users\Hemanth\Desktop\fullstack-journey\Images\Painting.jpeg" alt="Painting image" width="500px"></a>
+            </article>
+            <article>
+                <p>Find me at <a href="https://github.com/ThanujaMattam" target="_blank">Github</a> and <a href="https://www.linkedin.com/in/thanuja-mattam-513bb0243" target="_blank">LinkedIn</a></p>
+            </article>
+        <article>
+            <h3 id="subheader">Quick Intro</h3>
+            <ul>
+                <li id="liststyle">Currently working at TCS as an OBIEE Developer</li>
+                <li id="liststyle">2 years of experience in IT Industry</li>
+                <li id="liststyle">Familiar with OAS and Power BI Tools</li>
+                <li id="liststyle">Intersted to take up a Full Stack Dev role</li>
+                <li id="liststyle">Love drawing and watching movies</li>
+            </ul>
+        </article>
+        <article>
+            <h3 id="subheader">Skills</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="tablehead">Skill Name</th>
+                        <th id="tablehead">Confidence /10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="tablestyle">OAS (Oracle Analytics Server)</td>
+                        <td id="tablestyle">7</td>
+                    </tr>
+                    <tr>
+                        <td id="tablestyle">Power BI</td>
+                        <td id="tablestyle">5</td>
+                    </tr>
+                    <tr>
+                        <td id="tablestyle">Full Stack</td>
+                        <td id="tablestyle">Currently Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h3 id="subheader">Want to contact ?</h3>
+            <p>Do fill the below fom and submit to contact :)</p>
+            <form action="process.php" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label>Full Name: </label></td>
+                            <td><input type="text" name="firstName" placeholder="Enter Full Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email: </label></td>
+                            <td><input type="email" name="emailAddress" placeholder="Enter your email address"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Please enter your message: </label></td>
+                            <td><textarea name="message" placeholder="Enter your message here"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </article>
+        <article>
+            <h3 id="subheader">Watched Latest Coolie Trailer? Do have a look below :)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l8qlUDRSaTU?si=zndp7laOs9uzW8Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        </section>
+        <footer id="main-footer">
+            <p>Copyright &copy; 2025, About me</p>
+        </footer>
 </html>
